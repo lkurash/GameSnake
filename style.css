@@ -87,6 +87,7 @@ body {
     animation: blink2 1.5s linear infinite;
 }
 .newgame{
+  display: none;
   width: 150px;
   height: 50px;
   position: absolute;
@@ -102,6 +103,7 @@ body {
   padding-top: 5px;
 }
 .gameover{
+  display: none;
   position: absolute;
   margin-left: 143px;
   margin-top: 150px;
