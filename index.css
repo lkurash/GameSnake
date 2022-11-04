@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: Lakki Reddy;
+  place-items: start;
+  background: url('img/1647940022_30-abrakadabra-fun-p-fon-dlya-igri-dlya-detei-46.jpeg') center center / cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.header{
+  margin: 0 auto;
+}
+.img{
+  margin-left: 30px;
+}
+.bt{
+  display: flex;
+  justify-content: center;
+  font-family: Lakki Reddy;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20%;
+  width: 150px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  color: #FFF700;
+  background-color: #136A0B;
+  border-color: #079C0E;
+  -webkit-animation: blink2 1.5s linear infinite;
+  animation: blink2 1.5s linear infinite;
+  text-decoration: none
+}
+.bt:hover {
+  color: #136A0B;
+  -webkit-text-stroke: 0.02cm #FFF700;
+  background-color: hsl(59, 100%, 50%);
+  cursor: pointer;
+}
+.logo {
+  padding-top: 50px;
+  font-family: Lakki Reddy;
+  margin: 0 auto;
+  font-size: 100px;
+  -webkit-text-stroke: 0.02cm #FFF700;
+  -webkit-animation: blink 2s linear infinite;
+  animation: blink 2s linear infinite;
+}
+.form {
+  width: 250px;
+  height: 55px;
+  margin: 0 auto;
+  background-color: rgba(35, 84, 21, 0.7);
+  border-radius: 16px;
+}
+
+/* input[type=submit] {
+  width: 250px;
+  height: 59px;
+  border-radius: 10px;
+  background: #0D606F;
+  margin-left: 646px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: Red Hat Text;
+  font-style: medium;
+  margin: 0 auto;
+  margin-top: 18px;
+} */
+
+input[type=text] {
+  width: 170px;
+  height: 22px;
+  font-size: 20px;
+  font-family: Aleo;
+  color: #FFF700;
+  margin-left: 41px;
+  margin-top: 15px;
+  background-color: transparent;
+  border: transparent;
+}
+
+::placeholder {
+  color: #356f20;
+}
+
+ @-webkit-keyframes blink {
+  0% {
+    color: rgb(0, 128, 45);
+  }
+
+  50% {
+    color: rgb(14, 183, 17);
+  }
+
+  100% {
+    color: rgb(0, 128, 45);
+  }
+}
+
+ @keyframes blink {
+  0% {
+    color: rgb(0, 128, 9);
+  }
+
+  50% {
+    color: rgb(14, 183, 37);
+  }
+
+  100% {
+    color: rgb(0, 128, 51);
+  }
+ }
+
+
+ @-webkit-keyframes blink2 {
+   0% {
+    background-color: rgb(0, 128, 45);
+   }
+
+   50% {
+    background-color: rgb(14, 183, 17);
+   }
+
+   100% {
+    background-color: rgb(0, 128, 45);
+   }
+ }
+
+ @keyframes blink2 {
+   0% {
+    background-color: rgb(0, 128, 9);
+   }
+
+   50% {
+    background-color: rgb(14, 183, 37);
+   }
+
+   100% {
+    background-color: rgb(0, 128, 51);
+   }
+ }

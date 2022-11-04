@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  /* display: grid; */
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: start;
+  background: url('img/1636952967_1-bogatyr-club-p-fon-priroda-dlya-detei-1.jpeg') center center / cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.playboard{
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.h3 {
+  color: #136A0B;
+  font-family: Lakki Reddy;
+  -webkit-text-stroke: 0.02cm #FFF700;
+  font-size: 50px;
+}
+ .score{
+  background: url('img/1647940022_30-abrakadabra-fun-p-fon-dlya-igri-dlya-detei-46.jpeg')center;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  border: 4mm ridge rgba(39, 94, 17, 0.8);
+  color: #136A0B;
+  font-family: Lakki Reddy;
+  -webkit-text-stroke: 0.02cm #FFF700;
+  font-size: 40px;
+}
+.score p {
+  font-family: Lakki Reddy;
+  -webkit-text-stroke: 0.05cm #FFF700;
+  color: #136A0B;
+  font-size: 50px;
+  margin-left: 20px;
+}
+.points{
+  display: flex;
+  margin-bottom: 30px;
+  width: 180px;
+}
+.level{
+  display: flex;
+}
+.level h3{
+  font-size: 40px;
+}
+.level p{
+  margin-left: 20px;
+  font-size: 55px;
+}
+.canvasbt{
+  position: relative;
+}
+.btn{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 250px;
+    border-radius: 20%;
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    color: #FFF700;
+    background-color: #136A0B;
+    border-color:#fff700;
+    font-family: Lakki Reddy;
+    -webkit-animation: blink2 1.5s linear infinite;
+    animation: blink2 1.5s linear infinite;
+}
+.newgame{
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  margin-left: 243px;
+  margin-top: 350px;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Lakki Reddy;
+  background-color: #18b9ce;
+  color: #ffffff;
+  border-color: rgb(231, 12, 12);
+  padding-top: 5px;
+}
+.gameover{
+  position: absolute;
+  margin-left: 143px;
+  margin-top: 150px;
+  color: #eb2910;
+  font-family: Lakki Reddy;
+  -webkit-text-stroke: 0.0001cm #ffffff;
+  font-size: 70px;
+}
+.btn:hover {
+  color: #136A0B;
+  -webkit-text-stroke: 0.02cm #FFF700;
+  background-color: hsl(59, 100%, 50%);
+  cursor: pointer;
+}
+
+canvas{
+  background: #8EE1F9;
+  border: 4mm ridge rgba(30, 217, 234, 0.8);
+  border-radius: 10px;
+}
+
+ @-webkit-keyframes blink2 {
+   0% {
+     background-color: rgb(0, 128, 45);
+   }
+
+   50% {
+     background-color: rgb(14, 183, 17);
+   }
+
+   100% {
+     background-color: rgb(0, 128, 45);
+   }
+ }
+
+ @keyframes blink2 {
+   0% {
+     background-color: rgb(0, 128, 9);
+   }
+
+   50% {
+     background-color: rgb(14, 183, 37);
+   }
+
+   100% {
+     background-color: rgb(0, 128, 51);
+   }
+ }

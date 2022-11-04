@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./script/play.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lakki+Reddy:regular" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
+  <audio autoplay>
+    <source src="audio/quirkafleeg-classic-arcade-game-116821.mp3" type="audio/mpeg">
+  </audio>
+  <div class="window">
+    <div class="h1">
+    </div>
+    <div class="playboard">
+    <div class="score">
+      <h3>Score:</h3>
+      <div class="points">
+        <img class="img" src="img/1720772_win_achievement_best_reward_trophy_icon.png" width="60px" height="60px">
+      <p id="points">0</p></div>
+      <h3>Level:</h3>
+      <div class="level">
+        <img class="img" src="img/1034364_quality_award_prize_star_trophy_icon.png"width="60px" height="60px"><p id="level">0</p>
+      </div>
+    </div>
+    <div class="canvasbt">
+      <button id="button" class="btn">PLAY</button>
+      <button id="button2" class="newgame">New Game</button>
+      <h3 class="gameover" id="gameover">Game Over</h3>
+      <canvas id="game" width="608px" height="576px"></canvas>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
