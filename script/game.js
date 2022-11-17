@@ -138,24 +138,32 @@ class Game{
     for (let i = 0; i < snake.snake.length; i++) {
 
       if (dir == 'left') {
-        snake.gradient(snake.snake[i].x + 28, snake.snake[i].y);
-        ctx.fillRect(snake.snake[i].x + 28,snake.snake[i].y, box, box);
         ctx.drawImage(headLeft,snake.snake[0].x, snake.snake[0].y, box, box);
+        if (i > 0) {
+          snake.gradient(snake.snake[i].x, snake.snake[i].y);
+          ctx.fillRect(snake.snake[i].x,snake.snake[i].y, box, box);
+        }
       }
       if (dir == 'down') {
-        snake.gradient(snake.snake[i].x, snake.snake[i].y - 28);
-        ctx.fillRect(snake.snake[i].x,snake.snake[i].y - 28, box, box);
         ctx.drawImage(head,snake.snake[0].x, snake.snake[0].y, box, box);
+        if (i > 0) {
+          snake.gradient(snake.snake[i].x, snake.snake[i].y);
+          ctx.fillRect(snake.snake[i].x,snake.snake[i].y, box, box);
+        }
       }
       if (dir == 'right') {
-        snake.gradient(snake.snake[i].x - 28, snake.snake[i].y);
-        ctx.fillRect(snake.snake[i].x - 28,snake.snake[i].y, box, box);
         ctx.drawImage(headRight,snake.snake[0].x, snake.snake[0].y, box, box);
+        if (i > 0) {
+          snake.gradient(snake.snake[i].x, snake.snake[i].y);
+          ctx.fillRect(snake.snake[i].x,snake.snake[i].y, box, box);
+        }
       }
       if (dir == 'up') {
-        snake.gradient(snake.snake[i].x, snake.snake[i].y + 28);
-        ctx.fillRect(snake.snake[i].x,snake.snake[i].y + 28, box, box);
         ctx.drawImage(headUp,snake.snake[0].x, snake.snake[0].y, box, box);
+        if (i > 0) {
+          snake.gradient(snake.snake[i].x, snake.snake[i].y);
+          ctx.fillRect(snake.snake[i].x,snake.snake[i].y, box, box);
+        }
       }
       points.textContent = this.point * 100;
 
